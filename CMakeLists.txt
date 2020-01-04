@@ -4,6 +4,7 @@ add_definitions("-Wall -O2 -g")
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(LIBDVBV5  libdvbv5>=1.18.0)
 pkg_check_modules(LIBV4L2   libv4l2>=1.18.0)
+pkg_check_modules(LIBDVBPSI libdvbpsi>=1.3.2)
 
 execute_process(COMMAND awk -f iso_639.awk iso_639.tab
                 OUTPUT_VARIABLE langidents.c)
