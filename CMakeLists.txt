@@ -1,10 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
 project(epgrab)
-set(${PROJECT_NAME}_MAJOR "2")
-set(${PROJECT_NAME}_MINOR "0")
-set(${PROJECT_NAME}_PATCH "0")
-set(VERSION "${${PROJECT_NAME}_MAJOR}.${${PROJECT_NAME}_MINOR}.${${PROJECT_NAME}_PATCH}")
-
 set(PACKAGE ${PROJECT_NAME})
 
 find_package(PkgConfig REQUIRED)
@@ -20,4 +15,11 @@ execute_process(COMMAND awk -f iso_639.awk iso_639.tab
 file(WRITE langidents.c "${langidents.c}")
 
 add_executable(tv_grab_dvb crc32.c lookup.c dvb_info_tables.c dvb_text_iconv.c langidents.c tv_grab_dvb.c)
+
+set(PROGRAM_NAME "epgrab")
+set(${PROGRAM_NAME}_MAJOR "2")
+set(${PROGRAM_NAME}_MINOR "0")
+set(${PROGRAM_NAME}_PATCH "0")
+set(PROGRAM_VERSION "${${PROGRAM_NAME}_MAJOR}.${${PROGRAM_NAME}_MINOR}.${${PROGRAM_NAME}_PATCH}")
+configure_file(config.h.in config.h)
 add_executable(epgrab epgrab.c)

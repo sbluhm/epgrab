@@ -28,3 +28,4 @@ Makefile
 
 epgrab
 tv_grab_dvb
+config.h

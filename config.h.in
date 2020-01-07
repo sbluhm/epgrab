@@ -1,0 +1,2 @@
+#cmakedefine PROGRAM_NAME "@PROGRAM_NAME@"
+#cmakedefine PROGRAM_VERSION "@PROGRAM_VERSION@"
