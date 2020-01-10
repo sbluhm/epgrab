@@ -19,11 +19,13 @@
  */
 
 #include <stdio.h>
+#include <argp.h>
 
 #include "config.h"
 
 #include <linux/dvb/dmx.h>
 #include <libdvbv5/dvb-dev.h>
+#include <mxml.h>
 
 int main( int argc, char *argv[] ) {
     // Find DVB devices
