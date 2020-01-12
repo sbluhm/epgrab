@@ -1,0 +1,25 @@
+Third Party Software Licensing Notices (sorted alphabetically)
+
+* libdvbv5:
+
+    GNU LESSER GENERAL PUBLIC LICENSE Version 2.1
+    https://git.linuxtv.org/v4l-utils.git/tree/COPYING.libdvbv5
+
+* Mini-XML (mxml)
+
+    Apache License Version 2.0
+    https://github.com/michaelrsweet/mxml/blob/master/LICENSE
+
+* v4l-utils:
+
+    The (for now for v4l-utils private use only) libv4l2util library is
+    released under the GNU Lesser General Public License, all other code is
+    released under the GNU General Public License.
+    (https://git.linuxtv.org/v4l-utils.git/tree/README)
+
+    GNU GENERAL PUBLIC LICENSE Version 2
+    https://git.linuxtv.org/v4l-utils.git/tree/COPYING
+
+    GNU LESSER GENERAL PUBLIC LICENSE Version 2.1
+    https://git.linuxtv.org/v4l-utils.git/tree/COPYING.libv4l
+
