@@ -22,6 +22,8 @@
 tags
 CMakeCache.txt
 CMakeFiles/
+build/
+target/
 cmake_install.cmake
 langidents.c
 Makefile
