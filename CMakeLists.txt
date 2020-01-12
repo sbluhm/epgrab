@@ -9,7 +9,7 @@ pkg_check_modules(LIBDVBPSI libdvbpsi>=1.3.2)
 pkg_check_modules(MXML      mxml>=3.1)
 
 
-set(CMAKE_C_FLAGS "-Wall -O2 -g -ldvbv5 -lmxml")
+set(CMAKE_C_FLAGS "-pedantic -Wall -O2 -g -ldvbv5 -lmxml")
 
 execute_process(COMMAND awk -f iso_639.awk iso_639.tab
                 OUTPUT_VARIABLE langidents.c)
